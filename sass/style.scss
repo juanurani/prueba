@@ -1,0 +1,102 @@
+// Fuente
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+// Variables
+// Colores
+$primario: #ff7e27;
+$secundario: #393232;
+$body: #EDEDED;
+$exito: #28a745;
+$error: #dc3545;
+$hoverButton: #dd6a1d;
+
+// Sombras
+$boxShadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+
+// Mixings
+// Flex Row
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+// Flex Column
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+// Boton
+@mixin boton {
+    background-color: #ff7e27;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+// Parciales
+@import "../sass/components/carrito";
+@import "../sass/components/divCarritoPagina";
+@import "../sass/components/producto";
+@import "../sass/core/normalize";
+@import "../sass/layout/footer";
+@import "../sass/layout/nav";
+@import "../sass/pages/carritopagina";
+@import "../sass/pages/productos";
+@import "../sass/components/datosCompra";
+
+// General
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body { 
+    background-color: $body;
+}
+
+
+// botonExito
+#avisoAgregadoCarrito{
+    @include boton();
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: $exito;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    p{
+        padding: 1rem;
+        border-right: 1px solid white;
+    }
+    button{
+        background-color: $exito;
+        border: none;
+        color: white;
+        padding: 1rem;
+    }
+}
+
+#productosDelCarrito{
+    background-color: white;
+    padding: 1rem;
+}
+
+
+.noMostrar{
+    display: none;
+}
+
+.mostrar{
+    display: flex;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/afb9e1b8d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="divNavPrincipal">
+                <div class="logoPrincipal">
+                    <a href="../index.html"><img src="../imagenes/test.png" alt="Logo Principal" class="logoPrincipal"></a>
+                </div>
+                <div class="barraFiltrar">
+                    <input type="text" name="barrarDeFiltro" placeholder="Eso que querés... encontralo acá" class="barraFiltrar"> 
+                    <button><i class="fas fa-search buscar"></i></button>
+                </div>
+                <div class="botones">
+                    <a href="favoritos.html"><button class="favoritos" id="favoritos"><i class="fas fa-heart fa-3x"></i></button></a>
+                    <button class="carrito" id="carrito"><i class="fas fa-shopping-cart fa-3x"></i></button>
+                </div>
+            </div>
+            <div class="divNavSecundario">
+                <ul>
+                    <a href="#"><li>Productos</li></a>
+                    <a href="#"><li>Marcas</li></a>
+                    <a href="#"><li>Nosotros</li></a>
+                    <a href="#"><li>Contacto</li></a>
+                    <a href="#"><li>Arma tu PC</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="productosFavoritos"></main>
+
+
+
+
+
+
+<footer>
+    <div class="contenidoDivPrincipal">
+        <div class="seccionContenido">
+            <h3>Atención al cliente</h3>
+            <p>482817656</p>
+            <p>consultas@techstore.com.ar</p>
+        </div>
+        <div class="seccionContenido">
+            <h3>Horarios</h3>
+            <p>Lunes a Viernes de 10h a 17h</p>
+            <p>Sabados de 10h a 14h</p>
+        </div>
+        <div class="seccionContenido">
+            <h3>Nuestas Redes Sociales</h3>
+            <div class="redesSocialesFooter">
+                <img src="../imagenes/instagram.png" alt="">
+                <img src="../imagenes/tiktok.png" alt="">
+                <img src="../imagenes/facebook.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="contenidoDivSecundario">
+        <div class="seccionSuscripcion">
+            <h3>Suscríbete para recibir las mejores promociones</h3>
+            <p>Sé el primero en enterarte de los nuevos lanzamientos</p>
+            <form action="#">
+                <fieldset class="fieldsetSuscripcion">
+                    <input type="text" name="infopersonal" placeholder="Tu email" class="emailSuscribirse">
+                    <input type="submit" value="Suscribirse" class="suscribirse">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="app/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+.productoPaginaCarrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0rem;
+    .imagenProductoPaginaCarrito{
+        width: 25%;
+        margin-right: 0.4rem;
+        text-align: center;
+        img{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    p{
+        width: 25%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .botonProductoPaginaCarrito{
+        width: 25%;
+        text-align: center;
+        button{
+            @include boton();
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}
